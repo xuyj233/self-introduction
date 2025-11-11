@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import List, Optional
 
 ROOT = Path(__file__).resolve().parents[1]
-TEX_PATH = ROOT / "data" / "resume" / "resume.tex"
+TEX_PATH = ROOT / "source" / "resume.tex"
 OUTPUT_PATH = ROOT / "data" / "publications.json"
 
 
