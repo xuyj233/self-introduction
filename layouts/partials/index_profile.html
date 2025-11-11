@@ -118,28 +118,6 @@
     </section>
     {{- end }}
 
-    {{- with site.Data.publications }}
-    <section class="home-section">
-        <h2>Selected Publications</h2>
-        {{- $published := .published | default slice }}
-        {{- if $published }}
-        {{- $sorted := sort $published "year" "desc" }}
-        <ol>
-            {{- range first 3 $sorted }}
-            <li>
-                <strong>{{ .title }}</strong><br>
-                {{- with .authors }}<span class="meta">{{ . }}</span><br>{{- end }}
-                {{- with .venue }}<span class="meta">{{ . }}</span>{{- end }}
-            </li>
-            {{- end }}
-        </ol>
-        <p><a href="{{ "/papers/" | relURL }}">View full publication list →</a></p>
-        {{- else }}
-        <p>Publication records are syncing from the CV. Please check back soon.</p>
-        {{- end }}
-    </section>
-    {{- end }}
-
     {{- with $home.skills }}
     <section class="home-section">
         <h2>Skills</h2>
