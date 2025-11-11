@@ -1,42 +1,4 @@
-headline:
-  - "I am a Ph.D. candidate in Fintech at the Hong Kong University of Science and Technology (Guangzhou), where I study how large language models can enhance financial intelligence and decision-making."
-  - "My current research investigates alignment and interpretability techniques for LLMs, neural stochastic differential equations for market dynamics, and large-scale reasoning systems for finance."
+intro: >
+  I am Yuanjian Xu (徐元�?, a Ph.D. candidate in Fintech at the Hong Kong University of Science and Technology (Guangzhou). My research asks how large language models can reason over complex financial signals, how neural stochastic differential equations capture market dynamics, and how domain-grounded alignment keeps models faithful to economic realities.
 
-contact:
-  location: "Guangzhou · Hong Kong SAR"
-  email: "xuyuanjian233@gmail.com"
-  phone: "(+86) 176-3730-3503"
-
-education:
-  - institution: "Hong Kong University of Science and Technology (Guangzhou)"
-    degree: "Ph.D. in Fintech (Candidate)"
-    period: "2023.09 – Present"
-  - institution: "Peking University"
-    degree: "M.S. in Computer Science"
-    period: "2020.09 – 2023.06"
-  - institution: "Nankai University"
-    degree: "B.S. in Computer Science"
-    period: "2014.09 – 2018.06"
-
-research_focus:
-  bullets:
-    - "Large language models for financial reasoning, alignment, and interpretability."
-    - "Neural stochastic differential equations for multi-modal market dynamics."
-    - "Financial time-series analysis and quantitative investment automation."
-
-selected_papers:
-  - title: "FinRipple: Aligning Large Language Models with Financial Market for Event Ripple Effect Awareness"
-    venue: "ACL 2025"
-  - title: "Hard Sample Aware Prompt-Tuning"
-    venue: "ACL 2023"
-  - title: "LENS: Large Pre-trained Transformer for Exploring Financial Time Series Regularities"
-    venue: "ICAIF 2025"
-
-active_projects:
-  - name: "State Aware Neural SDEs"
-    status: "Under review at ICLR 2026"
-  - name: "Mitigating Discretization Bias in Neural SDEs"
-    status: "Under review at ICLR 2026"
-  - name: "BizCompass Benchmark"
-    status: "In preparation for ACL Rolling Review 2025"
-
+  I have published at ACL 2023, ACL 2025, and ICAIF 2025 with additional manuscripts under review at ICLR 2026, ICASS 2026, and ACL Rolling Review. I also review for NeurIPS, ICLR, and AAAI.
