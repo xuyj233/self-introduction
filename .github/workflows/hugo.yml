@@ -3,7 +3,7 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches:
-      - main  # 每次你推送到 main 分支时自动部署
+      - main
   workflow_dispatch:
 
 permissions:
@@ -25,7 +25,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.125.4'   # 可用最新稳定版
+          hugo-version: '0.125.4'
           extended: true
 
       - name: Build site
