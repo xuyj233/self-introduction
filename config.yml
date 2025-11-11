@@ -30,7 +30,7 @@ params:
   profileMode:
     enabled: true
     title: "Yuanjian Xu"
-    subtitle: "Ph.D. candidate · Fintech @ HKUST (GZ) · Large Language Models for Finance"
+    subtitle: "Ph.D. candidate · HKUST· Generative Model Theory"
     imageUrl: "picture.jpeg"
     imageWidth: 220
     imageHeight: 220
@@ -40,8 +40,6 @@ params:
         url: "about/"
       - name: "Publications"
         url: "papers/"
-      - name: "CV (PDF)"
-        url: "files/YuanjianXu_CV.pdf"
       - name: "Scholar"
         url: "https://scholar.google.com"
 
@@ -53,10 +51,6 @@ params:
       url: "https://github.com/xuyj233"
     - name: "Google Scholar"
       url: "https://scholar.google.com"
-    - name: "LinkedIn"
-      url: "https://www.linkedin.com/in/xuyuanjian/"
-    - name: "Twitter"
-      url: "https://twitter.com/xuyuanjian"
 
 # ✅ 顶部导航菜单
 menu:
