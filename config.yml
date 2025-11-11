@@ -37,11 +37,11 @@ params:
     imageTitle: "Portrait of Yuanjian Xu"
     buttons:
       - name: "About"
-        url: "/about/"
+        url: "about/"
       - name: "Publications"
-        url: "/papers/"
+        url: "papers/"
       - name: "CV (PDF)"
-        url: "/files/YuanjianXu_CV.pdf"
+        url: "files/YuanjianXu_CV.pdf"
       - name: "Scholar"
         url: "https://scholar.google.com"
 
@@ -63,19 +63,19 @@ menu:
   main:
     - identifier: about
       name: "About"
-      url: "/about/"
+      url: "about/"
       weight: 1
     - identifier: papers
       name: "Publications"
-      url: "/papers/"
+      url: "papers/"
       weight: 2
     - identifier: projects
       name: "Projects"
-      url: "/projects/"
+      url: "projects/"
       weight: 3
     - identifier: cv
       name: "CV"
-      url: "/files/YuanjianXu_CV.pdf"
+      url: "files/YuanjianXu_CV.pdf"
       weight: 4
 
 # ✅ Markdown 渲染配置
