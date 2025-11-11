@@ -18,51 +18,25 @@ education:
     degree: "B.S. in Computer Science"
     period: "2014.09 – 2018.06"
 
-research_experience:
-  - organization: "Hong Kong University of Science and Technology · Society Hub"
-    role: "Research Assistant"
-    period: "2023.04 – 2023.09"
-    bullets:
-      - "Developed asset pricing models grounded in large-scale patent datasets."
-  - organization: "Tsinghua University · AIR (Institute for AI Industry Research)"
-    role: "Visiting Student"
-    period: "2021.04 – 2022.06"
-    bullets:
-      - "Co-built NutritionKG with Meituan and Zhiyuan, a large-scale medical knowledge graph released publicly in May 2022."
-  - organization: "Peking University"
-    role: "Graduate Researcher · Prof. Xuanming Ni"
-    period: "2020.09 – 2021.04"
-    bullets:
-      - "Analyzed PIN and VPIN indicators with Huatai Securities."
-      - "Modeled high-frequency financial time series using deep sequential learning architectures."
-  - organization: "Nankai University"
-    role: "Undergraduate Researcher · Prof. Jie Liu"
-    period: "2017.10 – 2018.06"
-    bullets:
-      - "Designed an end-to-end object detection system from annotation to deployment."
-      - "Earned the cohort’s top thesis evaluation."
+research_focus:
+  bullets:
+    - "Large language models for financial reasoning, alignment, and interpretability."
+    - "Neural stochastic differential equations for multi-modal market dynamics."
+    - "Financial time-series analysis and quantitative investment automation."
 
-skills:
-  - category: "Machine Learning"
-    items: ["Deep Learning", "Reinforcement Learning", "Contrastive Learning"]
-  - category: "Model Families"
-    items: ["CNNs", "RNNs", "Large Language Models", "Diffusion Models"]
-  - category: "Applications"
-    items: ["Financial AI", "Quantitative Investment", "Market Simulation"]
-  - category: "Programming"
-    items: ["Python", "NumPy", "Pandas", "PyTorch"]
-  - category: "Languages"
-    items: ["English (TOEFL 103, CET-6)", "Mandarin Chinese"]
+selected_papers:
+  - title: "FinRipple: Aligning Large Language Models with Financial Market for Event Ripple Effect Awareness"
+    venue: "ACL 2025"
+  - title: "Hard Sample Aware Prompt-Tuning"
+    venue: "ACL 2023"
+  - title: "LENS: Large Pre-trained Transformer for Exploring Financial Time Series Regularities"
+    venue: "ICAIF 2025"
 
-awards:
-  - name: "Award for Excellent Academic Excellence"
-    issuer: "Peking University"
-    year: "2021"
-    note: "Certificate No. H2021000170320"
-  - name: "Air Star Plan"
-    issuer: "Tsinghua University · AIR"
-    year: "2021"
-  - name: "Full Ph.D. Scholarship"
-    issuer: "Hong Kong University of Science and Technology"
-    year: "2023 – Present"
+active_projects:
+  - name: "State Aware Neural SDEs"
+    status: "Under review at ICLR 2026"
+  - name: "Mitigating Discretization Bias in Neural SDEs"
+    status: "Under review at ICLR 2026"
+  - name: "BizCompass Benchmark"
+    status: "In preparation for ACL Rolling Review 2025"
 

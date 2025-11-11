@@ -69,83 +69,53 @@
     </section>
     {{- end }}
 
-    {{- if or $home.contact $home.education }}
-    <section class="home-section home-grid">
-        {{- with $home.contact }}
-        <div>
-            <h3>Contact</h3>
-            <ul>
-                {{- with .location }}<li><strong>Location:</strong> {{ . }}</li>{{- end }}
-                {{- with .email }}<li><strong>Email:</strong> <a href="mailto:{{ . }}">{{ . }}</a></li>{{- end }}
-                {{- with .phone }}<li><strong>Phone:</strong> {{ . }}</li>{{- end }}
-            </ul>
-        </div>
-        {{- end }}
-        {{- with $home.education }}
-        <div>
-            <h3>Education</h3>
-            <ul>
-                {{- range . }}
-                <li>
-                    <strong>{{ .degree }}</strong><br>
-                    {{ .institution }}<br>
-                    <span class="meta">{{ .period }}</span>
-                </li>
-                {{- end }}
-            </ul>
-        </div>
-        {{- end }}
+    {{- with $home.research_focus }}
+    <section class="home-section">
+        <h2>Research Focus</h2>
+        <ul>
+            {{- range .bullets }}
+            <li>{{ . }}</li>
+            {{- end }}
+        </ul>
     </section>
     {{- end }}
 
-    {{- with $home.research_experience }}
+    {{- with $home.education }}
     <section class="home-section">
-        <h2>Research Experience</h2>
+        <h2>Education</h2>
         <ul>
             {{- range . }}
             <li>
-                <strong>{{ .organization }}</strong> — {{ .role }} <span class="meta">({{ .period }})</span>
-                {{- with .bullets }}
-                <ul>
-                    {{- range . }}
-                    <li>{{ . }}</li>
-                    {{- end }}
-                </ul>
-                {{- end }}
+                <strong>{{ .degree }}</strong> — {{ .institution }} <span class="meta">({{ .period }})</span>
             </li>
             {{- end }}
         </ul>
     </section>
     {{- end }}
 
-    {{- with $home.skills }}
+    {{- with site.Data.publications }}
     <section class="home-section">
-        <h2>Skills</h2>
-        <div class="home-grid">
-            {{- range . }}
-            <div>
-                <strong>{{ .category }}</strong>
-                <ul>
-                    {{- range .items }}
-                    <li>{{ . }}</li>
-                    {{- end }}
-                </ul>
-            </div>
+        {{- $published := .published | default slice }}
+        {{- if gt (len $published) 0 }}
+        <h2>Recent Publications</h2>
+        <ol>
+            {{- range first 3 (sort $published "year" "desc") }}
+            <li><strong>{{ .title }}</strong>{{ with .venue }} <span class="meta">— {{ . }}</span>{{ end }}</li>
             {{- end }}
-        </div>
+        </ol>
+        {{- else }}
+        <p>Publication records are syncing from the CV. Please check back soon.</p>
+        {{- end }}
+        <p><a href="papers/">View all publications →</a></p>
     </section>
     {{- end }}
 
-    {{- with $home.awards }}
+    {{- with $home.active_projects }}
     <section class="home-section">
-        <h2>Honors & Awards</h2>
+        <h2>Active Projects</h2>
         <ul>
             {{- range . }}
-            <li>
-                <strong>{{ .name }}</strong> — {{ .issuer }}
-                {{- with .year }} <span class="meta">({{ . }})</span>{{- end }}
-                {{- with .note }}<div class="meta">{{ . }}</div>{{- end }}
-            </li>
+            <li><strong>{{ .name }}</strong> — {{ .status }}</li>
             {{- end }}
         </ul>
     </section>
