@@ -2,7 +2,8 @@ baseURL: "https://xuyj233.github.io/self-introduction/"
 title: "Yuanjian Xu"
 languageCode: "en-us"
 theme: "hugo-papermod"
-paginate: 10
+pagination:
+  pagerSize: 10
 enableEmoji: true
 defaultContentLanguage: "en"
 
