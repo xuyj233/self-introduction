@@ -62,7 +62,7 @@
 <section class="home-sections">
     {{- with $home.intro }}
     <section class="home-section">
-        <p>{{ . | markdownify }}</p>
+        {{ . | markdownify }}
     </section>
     {{- end }}
 </section>

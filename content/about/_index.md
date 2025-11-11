@@ -6,8 +6,7 @@ summary: "Ph.D. candidate in Fintech at HKUST (Guangzhou) researching large lang
 
 ## Experience
 
-I am a **Ph.D. candidate in Fintech** at the **Hong Kong University of Science and Technology (HKUST)** — an interdisciplinary program at the intersection of **AI, statistics, and finance**.  
-I hold an **M.S. in Computer Science** from **Peking University** and a **B.S. in Computer Science** from **Nankai University**.  
+I am a **Ph.D. candidate in Fintech** at the **Hong Kong University of Science and Technology (HKUST)** — an interdisciplinary program at the intersection of **AI, statistics, and finance**.  I hold an **M.S. in Computer Science** from **Peking University** and a **B.S. in Computer Science** from **Nankai University**.  
 I have also conducted **research internships** at leading institutions including **Tsinghua University’s Institute for AI Industry Research (AIR)** and **Microsoft Research Asia (MSRA)**.
 
 
