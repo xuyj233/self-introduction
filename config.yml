@@ -30,10 +30,10 @@ params:
   profileMode:
     enabled: true
     title: "Yuanjian Xu"
-    subtitle: "Fintech Ph.D. candidate @ HKUST (GZ) · Financial AI & LLMs"
-    imageUrl: "images/profile.jpg"
-    imageWidth: 180
-    imageHeight: 180
+    subtitle: "Ph.D. candidate · Fintech @ HKUST (GZ) · Large Language Models for Finance"
+    imageUrl: "picture.jpeg"
+    imageWidth: 220
+    imageHeight: 220
     imageTitle: "Portrait of Yuanjian Xu"
     buttons:
       - name: "About"
