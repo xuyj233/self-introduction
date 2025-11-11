@@ -14,8 +14,8 @@ module:
 # 网站基本信息
 params:
   author: "Yuanjian Xu"
-  description: "Ph.D. Candidate in Fintech @ HKUST (GZ) · Researching Large Language Models & Financial AI"
-  keywords: ["LLM", "Finance", "Neural SDE", "HKUST", "AI"]
+  description: "Ph.D. candidate studying large language models for financial AI applications."
+  keywords: ["Large Language Models", "Financial AI", "Neural SDE", "Fintech", "HKUST"]
   DateFormat: "2006-01-02"
   ShowReadingTime: false
   ShowShareButtons: true
@@ -29,11 +29,11 @@ params:
   profileMode:
     enabled: true
     title: "Yuanjian Xu"
-    subtitle: "Ph.D. Candidate in Fintech @ HKUST (GZ)"
+    subtitle: "Fintech Ph.D. candidate @ HKUST (GZ) · Financial AI & LLMs"
     imageUrl: "images/profile.jpg"
     imageWidth: 180
     imageHeight: 180
-    imageTitle: "Profile picture"
+    imageTitle: "Portrait of Yuanjian Xu"
     buttons:
       - name: "About"
         url: "/about/"
@@ -41,6 +41,8 @@ params:
         url: "/papers/"
       - name: "CV (PDF)"
         url: "/files/YuanjianXu_CV.pdf"
+      - name: "Scholar"
+        url: "https://scholar.google.com"
 
   # ✅ 社交链接
   socialIcons:
@@ -49,7 +51,7 @@ params:
     - name: "GitHub"
       url: "https://github.com/xuyj233"
     - name: "Google Scholar"
-      url: "https://scholar.google.com/citations?user=XXXXXXX"
+      url: "https://scholar.google.com"
     - name: "LinkedIn"
       url: "https://www.linkedin.com/in/xuyuanjian/"
     - name: "Twitter"
