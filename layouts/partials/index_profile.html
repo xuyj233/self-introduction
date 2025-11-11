@@ -60,64 +60,9 @@
 
 {{- if $home }}
 <section class="home-sections">
-    {{- with $home.headline }}
+    {{- with $home.intro }}
     <section class="home-section">
-        <h2>About</h2>
-        {{- range . }}
-        <p>{{ . }}</p>
-        {{- end }}
-    </section>
-    {{- end }}
-
-    {{- with $home.research_focus }}
-    <section class="home-section">
-        <h2>Research Focus</h2>
-        <ul>
-            {{- range .bullets }}
-            <li>{{ . }}</li>
-            {{- end }}
-        </ul>
-    </section>
-    {{- end }}
-
-    {{- with $home.education }}
-    <section class="home-section">
-        <h2>Education</h2>
-        <ul>
-            {{- range . }}
-            <li>
-                <strong>{{ .degree }}</strong> — {{ .institution }} <span class="meta">({{ .period }})</span>
-            </li>
-            {{- end }}
-        </ul>
-    </section>
-    {{- end }}
-
-    {{- with site.Data.publications }}
-    <section class="home-section">
-        {{- $published := .published | default slice }}
-        {{- if gt (len $published) 0 }}
-        <h2>Recent Publications</h2>
-        <ol>
-            {{- range first 3 (sort $published "year" "desc") }}
-            <li><strong>{{ .title }}</strong>{{ with .venue }} <span class="meta">— {{ . }}</span>{{ end }}</li>
-            {{- end }}
-        </ol>
-        {{- else }}
-        <p>Publication records are syncing from the CV. Please check back soon.</p>
-        {{- end }}
-        <p><a href="papers/">View all publications →</a></p>
-    </section>
-    {{- end }}
-
-    {{- with $home.active_projects }}
-    <section class="home-section">
-        <h2>Active Projects</h2>
-        <ul>
-            {{- range . }}
-            <li><strong>{{ .name }}</strong> — {{ .status }}</li>
-            {{- end }}
-        </ul>
+        <p>{{ . | markdownify }}</p>
     </section>
     {{- end }}
 </section>
