@@ -1,122 +1,71 @@
-baseURL: "https://pascalmichaillat.org/hugo-website/" 
-title: Moritz-Maria von Igelfeld
-theme: PaperMod
-
-enableInlineShortcodes: true
-enableRobotsTXT: true
-pagination:
-  pagerSize: 20
-
-taxonomies:
-    tag: tags
-
-menu:
-    main:
-        - name: Books
-          url: books/
-          weight: 5 
-        - name: Papers
-          url: papers/
-          weight: 2
-        - name: Courses
-          url: courses/
-          weight: 3
-        - name: Data
-          url: data/
-          weight: 4 
-        - name: Blog
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-          weight: 6
+baseURL: "https://xuyuanjian.github.io/"
+title: "Yuanjian Xu"
+theme: "hugo-papermod"
+languageCode: "en-us"
+defaultContentLanguage: "en"
+enableEmoji: true
+paginate: 10
 
 params:
-    description: "This website hosts Moritz-Maria von Igelfeld's research papers, books, course materials, data, curriculum vitae, and contact information."
-    author: Moritz-Maria von Igelfeld
-    # googleAnalyticsID: "G-XXXXX"
-    DateFormat: "January 2006"
-    defaultTheme: light
-    hideFooter: false
-    disableThemeToggle: true
-    ShowShareButtons: false
-    ShowReadingTime: false
-    disableSpecial1stPost: true
-    disableAnchoredHeadings: true
-    ShowPostNavLinks: false
-    ShowBreadCrumbs: false
-    ShowCodeCopyButtons: true
-    ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
-    ShowToc: false
-    disableScrollToTop: true
-    TocOpen: true
-    ShowWordCount: false
-    UseHugoToc: true
-    comments: false
-    math: true
-    profileMode:
-          enabled: true
-          title: Professor Dr von Igelfeld
-          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
-          imageUrl: "picture.jpeg"
-          imageWidth: 160
-          imageHeight: 160
-          buttons:
-            - name: Papers
-              url: papers/
-            - name: Data
-              url: data/
-            - name: Books
-              url: books/
-            - name: Courses
-              url: courses/
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
-            - name: Blog
-              url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+  author: "Yuanjian Xu"
+  description: "Ph.D. Candidate in Fintech, HKUST (Guangzhou)"
+  keywords: ["AI", "LLM", "Finance", "Neural SDE", "HKUST"]
+  ShowReadingTime: false
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  UseHugoToc: true
+  disableThemeToggle: false
+  hideFooter: false
 
-    socialIcons:
-        - name: CV
-          url: cv.pdf
-        - name: Email
-          url: mailto:igelfeld@regensburg.edu
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
-        - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
-        - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
-        - name: Twitter
-          url: https://x.com/pmichaillat
-        - name: Bluesky
-          url: https://bsky.app/profile/pmichaillat.bsky.social
+  profileMode:
+    enabled: true
+    title: "Yuanjian Xu"
+    subtitle: "Ph.D. Candidate in Fintech @ HKUST (GZ) · Researching Large Language Models & Financial AI"
+    imageUrl: "images/profile.jpg"
+    imageWidth: 180
+    imageHeight: 180
+    buttons:
+      - name: "About"
+        url: "/about/"
+      - name: "Publications"
+        url: "/papers/"
+      - name: "CV (PDF)"
+        url: "/files/YuanjianXu_CV.pdf"
 
-    assets:
-        disableScrollBarStyle: true
-    cover:
-        hiddenInList: false
-        hiddenInSingle: true
-    label:
-      text: "Moritz-Maria von Igelfeld"
-      icon: favicon.ico
-      iconHeight: 18
+  socialIcons:
+    - name: "Email"
+      url: "mailto:xuyuanjian233@gmail.com"
+    - name: "GitHub"
+      url: "https://github.com/xuyuanjian"
+    - name: "Google Scholar"
+      url: "https://scholar.google.com/citations?user=XXXXXXX"
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/xuyuanjian/"
+    - name: "Twitter"
+      url: "https://twitter.com/xuyuanjian"
+
+menu:
+  main:
+    - identifier: about
+      name: "About"
+      url: "/about/"
+      weight: 1
+    - identifier: papers
+      name: "Publications"
+      url: "/papers/"
+      weight: 2
+    - identifier: projects
+      name: "Projects"
+      url: "/projects/"
+      weight: 3
+    - identifier: cv
+      name: "CV"
+      url: "/files/YuanjianXu_CV.pdf"
+      weight: 4
 
 markup:
-    goldmark:
-        renderer:
-            unsafe: true
-    highlight:
-        guessSyntax: true
-        style: autumn 
-    tableOfContents:
-        endLevel: 2
-        ordered: false
-        startLevel: 2
+  goldmark:
+    renderer:
+      unsafe: true
