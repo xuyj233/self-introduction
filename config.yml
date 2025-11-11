@@ -1,31 +1,39 @@
-baseURL: "https://xuyuanjian.github.io/"
+baseURL: "https://xuyj233.github.io/self-introduction/"
 title: "Yuanjian Xu"
-theme: "hugo-papermod"
 languageCode: "en-us"
-defaultContentLanguage: "en"
-enableEmoji: true
+theme: "hugo-papermod"
 paginate: 10
+enableEmoji: true
+defaultContentLanguage: "en"
 
+# ✅ 加载 PaperMod 主题模块
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod
+
+# 网站基本信息
 params:
   author: "Yuanjian Xu"
-  description: "Ph.D. Candidate in Fintech, HKUST (Guangzhou)"
-  keywords: ["AI", "LLM", "Finance", "Neural SDE", "HKUST"]
+  description: "Ph.D. Candidate in Fintech @ HKUST (GZ) · Researching Large Language Models & Financial AI"
+  keywords: ["LLM", "Finance", "Neural SDE", "HKUST", "AI"]
+  DateFormat: "2006-01-02"
   ShowReadingTime: false
   ShowShareButtons: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   UseHugoToc: true
-  disableThemeToggle: false
+  comments: false
   hideFooter: false
 
+  # ✅ 主页展示样式
   profileMode:
     enabled: true
     title: "Yuanjian Xu"
-    subtitle: "Ph.D. Candidate in Fintech @ HKUST (GZ) · Researching Large Language Models & Financial AI"
+    subtitle: "Ph.D. Candidate in Fintech @ HKUST (GZ)"
     imageUrl: "images/profile.jpg"
     imageWidth: 180
     imageHeight: 180
+    imageTitle: "Profile picture"
     buttons:
       - name: "About"
         url: "/about/"
@@ -34,11 +42,12 @@ params:
       - name: "CV (PDF)"
         url: "/files/YuanjianXu_CV.pdf"
 
+  # ✅ 社交链接
   socialIcons:
     - name: "Email"
       url: "mailto:xuyuanjian233@gmail.com"
     - name: "GitHub"
-      url: "https://github.com/xuyuanjian"
+      url: "https://github.com/xuyj233"
     - name: "Google Scholar"
       url: "https://scholar.google.com/citations?user=XXXXXXX"
     - name: "LinkedIn"
@@ -46,6 +55,7 @@ params:
     - name: "Twitter"
       url: "https://twitter.com/xuyuanjian"
 
+# ✅ 顶部导航菜单
 menu:
   main:
     - identifier: about
@@ -65,7 +75,16 @@ menu:
       url: "/files/YuanjianXu_CV.pdf"
       weight: 4
 
+# ✅ Markdown 渲染配置
 markup:
   goldmark:
     renderer:
       unsafe: true
+
+# ✅ 启用 RSS / Sitemap / Canonical
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
